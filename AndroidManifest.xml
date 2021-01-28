@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.bloodbank">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/blood_bank_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/blood_bank_icon_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:label="Reset Password" android:name=".activites.RestorePassword"></activity>
+        <activity android:name=".activites.PostActivity" />
+        <activity android:label="Registration" android:name=".activites.ProfileActivity" />
+        <activity android:label="@string/app_name" android:theme="@style/AppTheme.NoActionBar" android:name=".activites.Dashboard" />
+        <activity  android:label="@string/title_activity_login"  android:name=".activites.LoginActivity" />
+        <activity android:theme="@style/AppTheme.NoActionBar" android:name=".activites.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
